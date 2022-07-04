@@ -12,6 +12,10 @@
   background-color: #e0f7fa;
 }
 
+.card:hover {
+  background-color: #aec4c7;
+}
+
 .pkmName {
   font-size: 12pt;
 }

@@ -11,23 +11,24 @@ const rowStyle = {
 }
 
 export const ListView = ({ pokedex }) => {
-  console.log(pokedex[0])
   return (
     <table style={tableStyle}>
       <thead>
-        <th>#</th>
-        <th>Sprite</th>
-        <th>Nombre</th>
-        <th>Tipo primario</th>
-        <th>Tipo secundario</th>
-        {Object.keys(pokedex[0].base).map((key, index) => {
-          return <th key={index}>{key}</th>
-        })}
+        <tr>
+          <th>#</th>
+          <th>Sprite</th>
+          <th>Nombre</th>
+          <th>Tipo primario</th>
+          <th>Tipo secundario</th>
+          {Object.keys(pokedex[0].base).map((key, index) => {
+            return <th key={index}>{key}</th>
+          })}
+        </tr>
       </thead>
       <tbody>
-        {pokedex.map(pokemon => {
+        {pokedex.map((pokemon, index) => {
           return (
-            <tr style={rowStyle}>
+            <tr style={rowStyle} key={index}>
               <td>{pokemon.id}</td>
               <td>
                 <img src={`http://localhost:1880/sprite/${pokemon.id}`} />
@@ -40,7 +41,7 @@ export const ListView = ({ pokedex }) => {
                 {pokemon.tipos[1] && <TypeCard tipo={pokemon.tipos[1]} />}
               </td>
               {Object.values(pokedex[0].base).map((value, index) => {
-                return <td>{value}</td>
+                return <td key={index}>{value}</td>
               })}
             </tr>
           )

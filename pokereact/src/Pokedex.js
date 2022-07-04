@@ -1,30 +1,36 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { CardView } from './components/CardView.js'
 import { ListView } from './components/ListView.js'
 import './Pokedex.css'
 
 function Pokedex() {
+  const effectRan = useRef(false)
   const [pokedexCurrentLang, setPokedexCurrentLang] = useState([])
   const [pokedex, setPokedex] = useState([])
   const [gridMode, setGridMode] = useState(false)
   const [search, setSearch] = useState('')
 
-  const fetchPokedex = async () => {
-    const data = await fetch('http://localhost:1880/pokedex', {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-      },
-    })
-    const pokedex_data = await data.json()
-    console.log(pokedex_data)
-    setPokedexCurrentLang(pokedex_data)
-    setPokedex(pokedex_data)
-  }
-
   useEffect(() => {
-    fetchPokedex()
-    setSearch('')
+    if (effectRan.current === true) {
+      const fetchPokedex = async () => {
+        const data = await fetch('http://localhost:1880/pokedex', {
+          method: 'GET',
+          headers: {
+            accept: 'application/json',
+          },
+        })
+        const pokedex_data = await data.json()
+        console.log(pokedex_data)
+        setPokedexCurrentLang(pokedex_data)
+        setPokedex(pokedex_data)
+        setSearch('')
+      }
+      fetchPokedex()
+    }
+
+    return () => {
+      effectRan.current = true
+    }
   }, [])
 
   useEffect(() => {

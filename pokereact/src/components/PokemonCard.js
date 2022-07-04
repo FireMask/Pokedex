@@ -1,15 +1,8 @@
 import React, { useState } from 'react'
 import { TypeCard } from './TypeCard.js'
-import { DetailCard } from './DetailCard.js'
 import './PokemonCard.css'
 
 export const PokemonCard = ({ pokemon }) => {
-  const pad = (num, size) => {
-    num = num.toString()
-    while (num.length < size) num = '0' + num
-    return num
-  }
-
   const [isHovering, setIsHovering] = useState(false)
 
   const handleMouseOver = () => {
@@ -36,9 +29,6 @@ export const PokemonCard = ({ pokemon }) => {
         {pokemon.tipos.map((tipo, key) => {
           return <TypeCard tipo={tipo} key={key} />
         })}
-      </div>
-      <div className="pkmStats">
-        {isHovering && <DetailCard detalle={pokemon.base} />}
       </div>
     </div>
   )
