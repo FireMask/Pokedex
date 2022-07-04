@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { CardView } from './components/CardView.js'
 import { ListView } from './components/ListView.js'
 import './Pokedex.css'
@@ -44,7 +44,7 @@ function Pokedex() {
     setSearch(event.target.value.toLowerCase())
   }
 
-  const handleGridMode = event => {
+  const handleGridMode = () => {
     setGridMode(!gridMode)
   }
 
