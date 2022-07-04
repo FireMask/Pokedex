@@ -2,7 +2,7 @@
 
 Este es un proyecto de prueba donde aprendo el uso de Express.js y ReactJS
 
-Para ejecutarlo correr clonar el repositorio
+Para ejecutarlo clonar el repositorio
 
 Primer pestaña (pokedex-api)
 ```sh
