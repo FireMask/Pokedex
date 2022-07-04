@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  width: 120px;
+  border-style: hidden;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #aec4c7;
+  padding: 5px;
+  background-color: #e0f7fa;
+}
+
+.pkmName {
+  font-size: 12pt;
+}
+
+.typeName {
+  display: flex;
+  gap: 2px;
+}

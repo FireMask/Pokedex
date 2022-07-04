@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "lang": {
+      "english": "Normal",
+      "chinese": "一般",
+      "japanese": "ノーマル"
+    },
+    "styles": {
+      "color": "#A8A878",
+      "border": "#C6C6A7"
+    }
+  },
+  {
+    "id": 2,
+    "lang": {
+      "english": "Fighting",
+      "chinese": "格斗",
+      "japanese": "かくとう"
+    },
+    "styles": {
+      "color": "#C03028",
+      "border": "#7D1F1A"
+    }
+  },
+  {
+    "id": 3,
+    "lang": {
+      "english": "Flying",
+      "chinese": "飞行",
+      "japanese": "ひこう"
+    },
+    "styles": {
+      "color": "#A890F0",
+      "border": "#6D5E9C"
+    }
+  },
+  {
+    "id": 4,
+    "lang": {
+      "english": "Poison",
+      "chinese": "毒",
+      "japanese": "どく"
+    },
+    "styles": {
+      "color": "#A040A0",
+      "border": "#6D5E9C"
+    }
+  },
+  {
+    "id": 5,
+    "lang": {
+      "english": "Ground",
+      "chinese": "地上",
+      "japanese": "じめん"
+    },
+    "styles": {
+      "color": "#E0C068",
+      "border": "#927D44"
+    }
+  },
+  {
+    "id": 6,
+    "lang": {
+      "english": "Rock",
+      "chinese": "岩石",
+      "japanese": "いわ"
+    },
+    "styles": {
+      "color": "#B8A038",
+      "border": "#786824"
+    }
+  },
+  {
+    "id": 7,
+    "lang": {
+      "english": "Bug",
+      "chinese": "虫",
+      "japanese": "むし"
+    },
+    "styles": {
+      "color": "#A8B820",
+      "border": "#6D7815"
+    }
+  },
+  {
+    "id": 8,
+    "lang": {
+      "english": "Ghost",
+      "chinese": "幽灵",
+      "japanese": "ゴースト"
+    },
+    "styles": {
+      "color": "#705898",
+      "border": "#493963"
+    }
+  },
+  {
+    "id": 9,
+    "lang": {
+      "english": "Steel",
+      "chinese": "钢",
+      "japanese": "はがね"
+    },
+    "styles": {
+      "color": "#B8B8D0",
+      "border": "#787887"
+    }
+  },
+  {
+    "id": 10,
+    "lang": {
+      "english": "Fire",
+      "chinese": "炎",
+      "japanese": "ほのお"
+    },
+    "styles": {
+      "color": "#F08030",
+      "border": "#9C531F"
+    }
+  },
+  {
+    "id": 11,
+    "lang": {
+      "english": "Water",
+      "chinese": "水",
+      "japanese": "みず"
+    },
+    "styles": {
+      "color": "#6890F0",
+      "border": "#445E9C"
+    }
+  },
+  {
+    "id": 12,
+    "lang": {
+      "english": "Grass",
+      "chinese": "草",
+      "japanese": "くさ"
+    },
+    "styles": {
+      "color": "#78C850",
+      "border": "#4E8234"
+    }
+  },
+  {
+    "id": 13,
+    "lang": {
+      "english": "Electric",
+      "chinese": "电",
+      "japanese": "でんき"
+    },
+    "styles": {
+      "color": "#F8D030",
+      "border": "#A1871F"
+    }
+  },
+  {
+    "id": 14,
+    "lang": {
+      "english": "Psychic",
+      "chinese": "超能",
+      "japanese": "エスパー"
+    },
+    "styles": {
+      "color": "#F85888",
+      "border": "#A13959"
+    }
+  },
+  {
+    "id": 15,
+    "lang": {
+      "english": "Ice",
+      "chinese": "冰",
+      "japanese": "こおり"
+    },
+    "styles": {
+      "color": "#98D8D8",
+      "border": "#638D8D"
+    }
+  },
+  {
+    "id": 16,
+    "lang": {
+      "english": "Dragon",
+      "chinese": "龙",
+      "japanese": "ドラゴン"
+    },
+    "styles": {
+      "color": "#7038F8",
+      "border": "#4924A1"
+    }
+  },
+  {
+    "id": 17,
+    "lang": {
+      "english": "Dark",
+      "chinese": "恶",
+      "japanese": "あく"
+    },
+    "styles": {
+      "color": "#705848",
+      "border": "#49392F"
+    }
+  },
+  {
+    "id": 18,
+    "lang": {
+      "english": "Fairy",
+      "chinese": "妖精",
+      "japanese": "フェアリー"
+    },
+    "styles": {
+      "color": "#EE99AC",
+      "border": "#9B6470"
+    }
+  }
+]
