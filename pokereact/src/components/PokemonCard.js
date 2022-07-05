@@ -1,26 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { BASE_URL } from './../utils/env_var'
 import { TypeCard } from './TypeCard.js'
 import './PokemonCard.css'
 
 export const PokemonCard = ({ pokemon }) => {
-  const [isHovering, setIsHovering] = useState(false)
-
-  const handleMouseOver = () => {
-    setIsHovering(true)
-  }
-
-  const handleMouseOut = () => {
-    setIsHovering(false)
-  }
-
   return (
-    <div
-      className="card"
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
-    >
+    <div className="card">
       <div className="sprite">
-        <img src={`http://localhost:1880/sprite/${pokemon.id}`} />
+        <img src={`${BASE_URL}/sprite/${pokemon.id}`} />
       </div>
       <div className="pkmName">
         {pokemon.id} - {pokemon.nombre}

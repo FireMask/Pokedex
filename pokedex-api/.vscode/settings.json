@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "/subscriptions/58c953cd-836f-481a-af3e-3c1ded4f9c8c/microsoft.web/sites/subscriptions/58c953cd-836f-481a-af3e-3c1ded4f9c8c/resourceGroups/apipokedex_group/providers/Microsoft.Web/sites/apipokedex",
+  "appService.deploySubpath": "."
+}
