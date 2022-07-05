@@ -1,4 +1,4 @@
-const PORT = 1880
+const PORT = process.env.PORT || 1880
 const express = require('express')
 const cors = require('cors')
 
