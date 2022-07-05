@@ -1,4 +1,5 @@
 import React from 'react'
+import { BASE_URL } from './../utils/env_var'
 import { TypeCard } from './TypeCard.js'
 
 const tableStyle = {
@@ -31,7 +32,7 @@ export const ListView = ({ pokedex }) => {
             <tr style={rowStyle} key={index}>
               <td>{pokemon.id}</td>
               <td>
-                <img src={`http://localhost:1880/sprite/${pokemon.id}`} />
+                <img src={`${BASE_URL}/sprite/${pokemon.id}`} />
               </td>
               <td>{pokemon.nombre}</td>
               <td>
